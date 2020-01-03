@@ -168,6 +168,10 @@ stm32f1xx_hal_tim_ex.h
 stm32f1xx_hal_def.h
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+stm32f1xx_hal_def.h
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+
 ../Inc/main.h
 stm32f1xx_hal.h
 ../Inc/stm32f1xx_hal.h
@@ -294,9 +298,17 @@ stm32f1xx_hal.h
 stm32f1xx_hal.h
 /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.h
 
+/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+stm32f1xx_hal.h
+/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.h
+
 /home/a/repos/github.com/chilogen/stm32_test/Src/main.c
 main.h
 /home/a/repos/github.com/chilogen/stm32_test/Src/main.h
+stdio.h
+/home/a/repos/github.com/chilogen/stm32_test/Src/stdio.h
+string.h
+/home/a/repos/github.com/chilogen/stm32_test/Src/string.h
 
 /home/a/repos/github.com/chilogen/stm32_test/Src/stm32f1xx_hal_msp.c
 main.h
