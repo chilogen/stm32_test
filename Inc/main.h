@@ -32,7 +32,10 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "uart.h"
+#include "nbiot.h"
+#include "beep.h"
+#include "led.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

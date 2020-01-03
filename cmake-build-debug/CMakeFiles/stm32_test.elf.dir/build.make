@@ -226,9 +226,48 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s"
 	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c -o CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 
+CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/stm32_test.elf.dir/flags.make
+CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj   -c /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+
+CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c > CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+
+CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c -o CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+
+CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj: CMakeFiles/stm32_test.elf.dir/flags.make
+CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj: ../Src/beep.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj   -c /home/a/repos/github.com/chilogen/stm32_test/Src/beep.c
+
+CMakeFiles/stm32_test.elf.dir/Src/beep.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/stm32_test.elf.dir/Src/beep.c.i"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a/repos/github.com/chilogen/stm32_test/Src/beep.c > CMakeFiles/stm32_test.elf.dir/Src/beep.c.i
+
+CMakeFiles/stm32_test.elf.dir/Src/beep.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/stm32_test.elf.dir/Src/beep.c.s"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a/repos/github.com/chilogen/stm32_test/Src/beep.c -o CMakeFiles/stm32_test.elf.dir/Src/beep.c.s
+
+CMakeFiles/stm32_test.elf.dir/Src/led.c.obj: CMakeFiles/stm32_test.elf.dir/flags.make
+CMakeFiles/stm32_test.elf.dir/Src/led.c.obj: ../Src/led.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/stm32_test.elf.dir/Src/led.c.obj"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/stm32_test.elf.dir/Src/led.c.obj   -c /home/a/repos/github.com/chilogen/stm32_test/Src/led.c
+
+CMakeFiles/stm32_test.elf.dir/Src/led.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/stm32_test.elf.dir/Src/led.c.i"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a/repos/github.com/chilogen/stm32_test/Src/led.c > CMakeFiles/stm32_test.elf.dir/Src/led.c.i
+
+CMakeFiles/stm32_test.elf.dir/Src/led.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/stm32_test.elf.dir/Src/led.c.s"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a/repos/github.com/chilogen/stm32_test/Src/led.c -o CMakeFiles/stm32_test.elf.dir/Src/led.c.s
+
 CMakeFiles/stm32_test.elf.dir/Src/main.c.obj: CMakeFiles/stm32_test.elf.dir/flags.make
 CMakeFiles/stm32_test.elf.dir/Src/main.c.obj: ../Src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/stm32_test.elf.dir/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/stm32_test.elf.dir/Src/main.c.obj"
 	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/stm32_test.elf.dir/Src/main.c.obj   -c /home/a/repos/github.com/chilogen/stm32_test/Src/main.c
 
 CMakeFiles/stm32_test.elf.dir/Src/main.c.i: cmake_force
@@ -239,9 +278,22 @@ CMakeFiles/stm32_test.elf.dir/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/stm32_test.elf.dir/Src/main.c.s"
 	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a/repos/github.com/chilogen/stm32_test/Src/main.c -o CMakeFiles/stm32_test.elf.dir/Src/main.c.s
 
+CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj: CMakeFiles/stm32_test.elf.dir/flags.make
+CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj: ../Src/nbiot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj   -c /home/a/repos/github.com/chilogen/stm32_test/Src/nbiot.c
+
+CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.i"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a/repos/github.com/chilogen/stm32_test/Src/nbiot.c > CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.i
+
+CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.s"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a/repos/github.com/chilogen/stm32_test/Src/nbiot.c -o CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.s
+
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/stm32_test.elf.dir/flags.make
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Src/stm32f1xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj"
 	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj   -c /home/a/repos/github.com/chilogen/stm32_test/Src/stm32f1xx_hal_msp.c
 
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.i: cmake_force
@@ -254,7 +306,7 @@ CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.s: cmake_force
 
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj: CMakeFiles/stm32_test.elf.dir/flags.make
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj: ../Src/stm32f1xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj"
 	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj   -c /home/a/repos/github.com/chilogen/stm32_test/Src/stm32f1xx_it.c
 
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.i: cmake_force
@@ -267,7 +319,7 @@ CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.s: cmake_force
 
 CMakeFiles/stm32_test.elf.dir/Src/syscalls.c.obj: CMakeFiles/stm32_test.elf.dir/flags.make
 CMakeFiles/stm32_test.elf.dir/Src/syscalls.c.obj: ../Src/syscalls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/stm32_test.elf.dir/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/stm32_test.elf.dir/Src/syscalls.c.obj"
 	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/stm32_test.elf.dir/Src/syscalls.c.obj   -c /home/a/repos/github.com/chilogen/stm32_test/Src/syscalls.c
 
 CMakeFiles/stm32_test.elf.dir/Src/syscalls.c.i: cmake_force
@@ -280,7 +332,7 @@ CMakeFiles/stm32_test.elf.dir/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.obj: CMakeFiles/stm32_test.elf.dir/flags.make
 CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.obj: ../Src/system_stm32f1xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.obj"
 	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.obj   -c /home/a/repos/github.com/chilogen/stm32_test/Src/system_stm32f1xx.c
 
 CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.i: cmake_force
@@ -291,9 +343,22 @@ CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.s"
 	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a/repos/github.com/chilogen/stm32_test/Src/system_stm32f1xx.c -o CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.s
 
+CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj: CMakeFiles/stm32_test.elf.dir/flags.make
+CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj: ../Src/uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj   -c /home/a/repos/github.com/chilogen/stm32_test/Src/uart.c
+
+CMakeFiles/stm32_test.elf.dir/Src/uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/stm32_test.elf.dir/Src/uart.c.i"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a/repos/github.com/chilogen/stm32_test/Src/uart.c > CMakeFiles/stm32_test.elf.dir/Src/uart.c.i
+
+CMakeFiles/stm32_test.elf.dir/Src/uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/stm32_test.elf.dir/Src/uart.c.s"
+	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a/repos/github.com/chilogen/stm32_test/Src/uart.c -o CMakeFiles/stm32_test.elf.dir/Src/uart.c.s
+
 CMakeFiles/stm32_test.elf.dir/startup/startup_stm32f103xe.s.obj: CMakeFiles/stm32_test.elf.dir/flags.make
 CMakeFiles/stm32_test.elf.dir/startup/startup_stm32f103xe.s.obj: ../startup/startup_stm32f103xe.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building ASM object CMakeFiles/stm32_test.elf.dir/startup/startup_stm32f103xe.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building ASM object CMakeFiles/stm32_test.elf.dir/startup/startup_stm32f103xe.s.obj"
 	/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/stm32_test.elf.dir/startup/startup_stm32f103xe.s.obj -c /home/a/repos/github.com/chilogen/stm32_test/startup/startup_stm32f103xe.s
 
 # Object files for target stm32_test.elf
@@ -311,11 +376,16 @@ stm32_test_elf_OBJECTS = \
 "CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" \
 "CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" \
 "CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" \
+"CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" \
+"CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj" \
+"CMakeFiles/stm32_test.elf.dir/Src/led.c.obj" \
 "CMakeFiles/stm32_test.elf.dir/Src/main.c.obj" \
+"CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj" \
 "CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj" \
 "CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj" \
 "CMakeFiles/stm32_test.elf.dir/Src/syscalls.c.obj" \
 "CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.obj" \
+"CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj" \
 "CMakeFiles/stm32_test.elf.dir/startup/startup_stm32f103xe.s.obj"
 
 # External object files for target stm32_test.elf
@@ -334,15 +404,20 @@ stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/s
 stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
 stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
 stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj
+stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Src/led.c.obj
 stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Src/main.c.obj
+stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj
 stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj
 stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj
 stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Src/syscalls.c.obj
 stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.obj
+stm32_test.elf: CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj
 stm32_test.elf: CMakeFiles/stm32_test.elf.dir/startup/startup_stm32f103xe.s.obj
 stm32_test.elf: CMakeFiles/stm32_test.elf.dir/build.make
 stm32_test.elf: CMakeFiles/stm32_test.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable stm32_test.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking C executable stm32_test.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stm32_test.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/stm32_test.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/stm32_test.bin"

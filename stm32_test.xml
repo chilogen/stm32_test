@@ -3,7 +3,7 @@
   <board id="stm32_test">
     <name>stm32_test</name>
     <mcuId>STM32F103ZETx</mcuId>  <!-- mcu-->
-    <dbgIF>SWD</dbgIF>
+    <dbgIF>JTAG</dbgIF>
     <dbgDEV>ST-LinkV2-1</dbgDEV>
   </board>
 </targetDefinitions>

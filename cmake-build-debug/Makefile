@@ -474,6 +474,87 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s:
 	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+
+Src/beep.obj: Src/beep.c.obj
+
+.PHONY : Src/beep.obj
+
+# target to build an object file
+Src/beep.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj
+.PHONY : Src/beep.c.obj
+
+Src/beep.i: Src/beep.c.i
+
+.PHONY : Src/beep.i
+
+# target to preprocess a source file
+Src/beep.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/beep.c.i
+.PHONY : Src/beep.c.i
+
+Src/beep.s: Src/beep.c.s
+
+.PHONY : Src/beep.s
+
+# target to generate assembly for a file
+Src/beep.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/beep.c.s
+.PHONY : Src/beep.c.s
+
+Src/led.obj: Src/led.c.obj
+
+.PHONY : Src/led.obj
+
+# target to build an object file
+Src/led.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/led.c.obj
+.PHONY : Src/led.c.obj
+
+Src/led.i: Src/led.c.i
+
+.PHONY : Src/led.i
+
+# target to preprocess a source file
+Src/led.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/led.c.i
+.PHONY : Src/led.c.i
+
+Src/led.s: Src/led.c.s
+
+.PHONY : Src/led.s
+
+# target to generate assembly for a file
+Src/led.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/led.c.s
+.PHONY : Src/led.c.s
+
 Src/main.obj: Src/main.c.obj
 
 .PHONY : Src/main.obj
@@ -500,6 +581,33 @@ Src/main.s: Src/main.c.s
 Src/main.c.s:
 	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/main.c.s
 .PHONY : Src/main.c.s
+
+Src/nbiot.obj: Src/nbiot.c.obj
+
+.PHONY : Src/nbiot.obj
+
+# target to build an object file
+Src/nbiot.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj
+.PHONY : Src/nbiot.c.obj
+
+Src/nbiot.i: Src/nbiot.c.i
+
+.PHONY : Src/nbiot.i
+
+# target to preprocess a source file
+Src/nbiot.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.i
+.PHONY : Src/nbiot.c.i
+
+Src/nbiot.s: Src/nbiot.c.s
+
+.PHONY : Src/nbiot.s
+
+# target to generate assembly for a file
+Src/nbiot.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.s
+.PHONY : Src/nbiot.c.s
 
 Src/stm32f1xx_hal_msp.obj: Src/stm32f1xx_hal_msp.c.obj
 
@@ -609,6 +717,33 @@ Src/system_stm32f1xx.c.s:
 	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.s
 .PHONY : Src/system_stm32f1xx.c.s
 
+Src/uart.obj: Src/uart.c.obj
+
+.PHONY : Src/uart.obj
+
+# target to build an object file
+Src/uart.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj
+.PHONY : Src/uart.c.obj
+
+Src/uart.i: Src/uart.c.i
+
+.PHONY : Src/uart.i
+
+# target to preprocess a source file
+Src/uart.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/uart.c.i
+.PHONY : Src/uart.c.i
+
+Src/uart.s: Src/uart.c.s
+
+.PHONY : Src/uart.s
+
+# target to generate assembly for a file
+Src/uart.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/uart.c.s
+.PHONY : Src/uart.c.s
+
 startup/startup_stm32f103xe.obj: startup/startup_stm32f103xe.s.obj
 
 .PHONY : startup/startup_stm32f103xe.obj
@@ -666,9 +801,21 @@ help:
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.s"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s"
+	@echo "... Src/beep.obj"
+	@echo "... Src/beep.i"
+	@echo "... Src/beep.s"
+	@echo "... Src/led.obj"
+	@echo "... Src/led.i"
+	@echo "... Src/led.s"
 	@echo "... Src/main.obj"
 	@echo "... Src/main.i"
 	@echo "... Src/main.s"
+	@echo "... Src/nbiot.obj"
+	@echo "... Src/nbiot.i"
+	@echo "... Src/nbiot.s"
 	@echo "... Src/stm32f1xx_hal_msp.obj"
 	@echo "... Src/stm32f1xx_hal_msp.i"
 	@echo "... Src/stm32f1xx_hal_msp.s"
@@ -681,6 +828,9 @@ help:
 	@echo "... Src/system_stm32f1xx.obj"
 	@echo "... Src/system_stm32f1xx.i"
 	@echo "... Src/system_stm32f1xx.s"
+	@echo "... Src/uart.obj"
+	@echo "... Src/uart.i"
+	@echo "... Src/uart.s"
 	@echo "... startup/startup_stm32f103xe.obj"
 .PHONY : help
 
