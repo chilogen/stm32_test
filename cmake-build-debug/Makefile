@@ -474,6 +474,60 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s:
 	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 
+Src/beep.obj: Src/beep.c.obj
+
+.PHONY : Src/beep.obj
+
+# target to build an object file
+Src/beep.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj
+.PHONY : Src/beep.c.obj
+
+Src/beep.i: Src/beep.c.i
+
+.PHONY : Src/beep.i
+
+# target to preprocess a source file
+Src/beep.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/beep.c.i
+.PHONY : Src/beep.c.i
+
+Src/beep.s: Src/beep.c.s
+
+.PHONY : Src/beep.s
+
+# target to generate assembly for a file
+Src/beep.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/beep.c.s
+.PHONY : Src/beep.c.s
+
+Src/key.obj: Src/key.c.obj
+
+.PHONY : Src/key.obj
+
+# target to build an object file
+Src/key.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/key.c.obj
+.PHONY : Src/key.c.obj
+
+Src/key.i: Src/key.c.i
+
+.PHONY : Src/key.i
+
+# target to preprocess a source file
+Src/key.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/key.c.i
+.PHONY : Src/key.c.i
+
+Src/key.s: Src/key.c.s
+
+.PHONY : Src/key.s
+
+# target to generate assembly for a file
+Src/key.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/key.c.s
+.PHONY : Src/key.c.s
+
 Src/main.obj: Src/main.c.obj
 
 .PHONY : Src/main.obj
@@ -666,6 +720,12 @@ help:
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.s"
+	@echo "... Src/beep.obj"
+	@echo "... Src/beep.i"
+	@echo "... Src/beep.s"
+	@echo "... Src/key.obj"
+	@echo "... Src/key.i"
+	@echo "... Src/key.s"
 	@echo "... Src/main.obj"
 	@echo "... Src/main.i"
 	@echo "... Src/main.s"

@@ -260,6 +260,12 @@
 		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/STM32F103ZETx_FLASH.ld">
 			<Option target="stm32_test.elf"/>
 		</Unit>
+		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Src/beep.c">
+			<Option target="stm32_test.elf"/>
+		</Unit>
+		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Src/key.c">
+			<Option target="stm32_test.elf"/>
+		</Unit>
 		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Src/main.c">
 			<Option target="stm32_test.elf"/>
 		</Unit>
