@@ -27,6 +27,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+  "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
+  "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
@@ -39,6 +41,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+  "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Src/main.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Src/main.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Src/stm32f1xx_hal_msp.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Src/stm32f1xx_it.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj"

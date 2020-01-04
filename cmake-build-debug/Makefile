@@ -150,6 +150,60 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s:
 	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
 
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
+
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
 
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.obj
@@ -474,6 +528,33 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s:
 	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+
 Src/main.obj: Src/main.c.obj
 
 .PHONY : Src/main.obj
@@ -630,6 +711,12 @@ help:
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.obj"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.i"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.s"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.obj"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.i"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.s"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.s"
@@ -666,6 +753,9 @@ help:
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.s"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s"
 	@echo "... Src/main.obj"
 	@echo "... Src/main.i"
 	@echo "... Src/main.s"

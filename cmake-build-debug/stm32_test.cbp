@@ -176,6 +176,12 @@
 		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
 			<Option target="stm32_test.elf"/>
 		</Unit>
+		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h">
+			<Option target="stm32_test.elf"/>
+		</Unit>
+		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h">
+			<Option target="stm32_test.elf"/>
+		</Unit>
 		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
 			<Option target="stm32_test.elf"/>
 		</Unit>
@@ -218,7 +224,16 @@
 		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
 			<Option target="stm32_test.elf"/>
 		</Unit>
+		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+			<Option target="stm32_test.elf"/>
+		</Unit>
 		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="stm32_test.elf"/>
+		</Unit>
+		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c">
+			<Option target="stm32_test.elf"/>
+		</Unit>
+		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c">
 			<Option target="stm32_test.elf"/>
 		</Unit>
 		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
@@ -255,6 +270,9 @@
 			<Option target="stm32_test.elf"/>
 		</Unit>
 		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="stm32_test.elf"/>
+		</Unit>
+		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
 			<Option target="stm32_test.elf"/>
 		</Unit>
 		<Unit filename="/home/a/repos/github.com/chilogen/stm32_test/STM32F103ZETx_FLASH.ld">
