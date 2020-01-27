@@ -474,6 +474,33 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s:
 	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+
 Src/main.obj: Src/main.c.obj
 
 .PHONY : Src/main.obj
@@ -666,6 +693,9 @@ help:
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.s"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s"
 	@echo "... Src/main.obj"
 	@echo "... Src/main.i"
 	@echo "... Src/main.s"

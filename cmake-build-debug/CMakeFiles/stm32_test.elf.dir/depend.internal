@@ -31,6 +31,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.o
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
@@ -61,6 +62,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cor
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
@@ -91,6 +93,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
@@ -121,6 +124,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_ext
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
@@ -151,6 +155,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_fla
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
@@ -181,6 +186,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_fla
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
@@ -211,6 +217,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpi
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
@@ -241,6 +248,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpi
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
@@ -271,6 +279,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
@@ -301,6 +310,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
@@ -331,6 +341,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
@@ -361,6 +372,7 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
@@ -391,8 +403,40 @@ CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm3.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+ ../Inc/stm32f1xx_hal_conf.h
+ /home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
 CMakeFiles/stm32_test.elf.dir/Src/main.c.obj
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
@@ -421,6 +465,7 @@ CMakeFiles/stm32_test.elf.dir/Src/main.c.obj
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/main.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Src/main.c
@@ -452,6 +497,7 @@ CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/main.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Src/stm32f1xx_hal_msp.c
@@ -483,6 +529,7 @@ CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/main.h
  ../Inc/stm32f1xx_hal_conf.h
  ../Inc/stm32f1xx_it.h
@@ -517,5 +564,6 @@ CMakeFiles/stm32_test.elf.dir/Src/system_stm32f1xx.c.obj
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/stm32f1xx_hal_conf.h
  /home/a/repos/github.com/chilogen/stm32_test/Src/system_stm32f1xx.c
