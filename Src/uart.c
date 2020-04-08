@@ -17,10 +17,7 @@ void USER_UART_IRQHandler(UART_HandleTypeDef *huart) {
         if (RESET != __HAL_UART_GET_FLAG(&huart2, UART_FLAG_IDLE)) {
             __HAL_UART_CLEAR_IDLEFLAG(&huart2);
             HAL_UART_DMAStop(&huart2);
-            uint8_t UART2DATAREADY = UART_BUFFER_SIZE - __HAL_DMA_GET_COUNTER(&hdma_usart2_rx);
-////            HAL_UART_Receive(&huart2, UART2RXBUFFER, length, 2);
-//            HAL_UART_Receive_DMA(&huart2, UART2RXBUFFER, UART_BUFFER_SIZE);
-//            UART2DATAREADY = 1;
+            UART2DATAREADY = UART_BUFFER_SIZE - __HAL_DMA_GET_COUNTER(&hdma_usart2_rx);
         }
     }
 }

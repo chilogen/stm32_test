@@ -466,6 +466,7 @@ CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj: ../Drivers/STM32F1xx_HAL_Driver/In
 CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj: ../Inc/beep.h
+CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj: ../Inc/gpio.h
 CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj: ../Inc/led.h
 CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj: ../Inc/main.h
 CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj: ../Inc/nbiot.h
@@ -502,6 +503,7 @@ CMakeFiles/stm32_test.elf.dir/Src/led.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc
 CMakeFiles/stm32_test.elf.dir/Src/led.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/stm32_test.elf.dir/Src/led.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/stm32_test.elf.dir/Src/led.c.obj: ../Inc/beep.h
+CMakeFiles/stm32_test.elf.dir/Src/led.c.obj: ../Inc/gpio.h
 CMakeFiles/stm32_test.elf.dir/Src/led.c.obj: ../Inc/led.h
 CMakeFiles/stm32_test.elf.dir/Src/led.c.obj: ../Inc/main.h
 CMakeFiles/stm32_test.elf.dir/Src/led.c.obj: ../Inc/nbiot.h
@@ -538,6 +540,7 @@ CMakeFiles/stm32_test.elf.dir/Src/main.c.obj: ../Drivers/STM32F1xx_HAL_Driver/In
 CMakeFiles/stm32_test.elf.dir/Src/main.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/stm32_test.elf.dir/Src/main.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/stm32_test.elf.dir/Src/main.c.obj: ../Inc/beep.h
+CMakeFiles/stm32_test.elf.dir/Src/main.c.obj: ../Inc/gpio.h
 CMakeFiles/stm32_test.elf.dir/Src/main.c.obj: ../Inc/led.h
 CMakeFiles/stm32_test.elf.dir/Src/main.c.obj: ../Inc/main.h
 CMakeFiles/stm32_test.elf.dir/Src/main.c.obj: ../Inc/nbiot.h
@@ -574,6 +577,7 @@ CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj: ../Drivers/STM32F1xx_HAL_Driver/I
 CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj: ../Inc/beep.h
+CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj: ../Inc/gpio.h
 CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj: ../Inc/led.h
 CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj: ../Inc/main.h
 CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj: ../Inc/nbiot.h
@@ -610,6 +614,7 @@ CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Drivers/STM32F1xx_
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Inc/beep.h
+CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Inc/gpio.h
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Inc/led.h
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Inc/main.h
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Inc/nbiot.h
@@ -646,6 +651,7 @@ CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj: ../Drivers/STM32F1xx_HAL_D
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj: ../Inc/beep.h
+CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj: ../Inc/gpio.h
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj: ../Inc/led.h
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj: ../Inc/main.h
 CMakeFiles/stm32_test.elf.dir/Src/stm32f1xx_it.c.obj: ../Inc/nbiot.h
@@ -716,6 +722,7 @@ CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/In
 CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj: ../Inc/beep.h
+CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj: ../Inc/gpio.h
 CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj: ../Inc/led.h
 CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj: ../Inc/main.h
 CMakeFiles/stm32_test.elf.dir/Src/uart.c.obj: ../Inc/nbiot.h

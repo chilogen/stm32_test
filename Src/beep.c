@@ -4,6 +4,10 @@
 
 #include "main.h"
 
-void BeepOn(){}
+void BeepOn(){
+    HAL_GPIO_WritePin(BEEP,GPIO_PIN_SET);
+}
 
-void BeepOff(){}
+void BeepOff(){
+    HAL_GPIO_WritePin(BEEP,GPIO_PIN_RESET);
+}

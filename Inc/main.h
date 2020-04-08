@@ -32,6 +32,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "gpio.h"
 #include "uart.h"
 #include "nbiot.h"
 #include "beep.h"

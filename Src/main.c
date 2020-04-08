@@ -44,7 +44,6 @@
 UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 DMA_HandleTypeDef hdma_usart2_rx;
-DMA_HandleTypeDef hdma_usart2_tx;
 
 /* USER CODE BEGIN PV */
 
@@ -107,8 +106,8 @@ int main(void) {
     MX_NVIC_Init();
     /* USER CODE BEGIN 2 */
     BeepOff();
-    LED0(0);
-    LED1(0);
+    SetLed0(0);
+    SetLed1(0);
     __HAL_UART_ENABLE_IT(&huart2, UART_IT_IDLE);
     HAL_UART_Receive_DMA(&huart2, UART2RXBUFFER, 20);
 
@@ -231,7 +230,7 @@ static void MX_USART2_UART_Init(void) {
 
 }
 
-/**
+/** 
   * Enable DMA controller clock
   */
 static void MX_DMA_Init(void) {
@@ -243,9 +242,6 @@ static void MX_DMA_Init(void) {
     /* DMA1_Channel6_IRQn interrupt configuration */
     HAL_NVIC_SetPriority(DMA1_Channel6_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(DMA1_Channel6_IRQn);
-    /* DMA1_Channel7_IRQn interrupt configuration */
-    HAL_NVIC_SetPriority(DMA1_Channel7_IRQn, 0, 0);
-    HAL_NVIC_EnableIRQ(DMA1_Channel7_IRQn);
 
 }
 
@@ -258,14 +254,25 @@ static void MX_GPIO_Init(void) {
     GPIO_InitTypeDef GPIO_InitStruct = {0};
 
     /* GPIO Ports Clock Enable */
+    __HAL_RCC_GPIOE_CLK_ENABLE();
     __HAL_RCC_GPIOA_CLK_ENABLE();
     __HAL_RCC_GPIOB_CLK_ENABLE();
 
     /*Configure GPIO pin Output Level */
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_5, GPIO_PIN_RESET);
 
-    /*Configure GPIO pin : PB5 */
+    /*Configure GPIO pin Output Level */
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5 | GPIO_PIN_8, GPIO_PIN_RESET);
+
+    /*Configure GPIO pin : PE5 */
     GPIO_InitStruct.Pin = GPIO_PIN_5;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+
+    /*Configure GPIO pins : PB5 PB8 */
+    GPIO_InitStruct.Pin = GPIO_PIN_5 | GPIO_PIN_8;
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
