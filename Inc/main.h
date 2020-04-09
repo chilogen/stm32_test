@@ -32,11 +32,13 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <stdarg.h>
 #include "gpio.h"
 #include "uart.h"
 #include "nbiot.h"
 #include "beep.h"
 #include "led.h"
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

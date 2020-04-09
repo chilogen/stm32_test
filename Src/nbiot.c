@@ -10,7 +10,7 @@ extern UART_HandleTypeDef huart2;
 extern uint8_t UART2DATAREADY;
 extern uint8_t UART2RXBUFFER[UART_BUFFER_SIZE];
 
-const coapIpPort="127.0.0.1:6666";
+const char coapIpPort[]="127.0.0.1:6666";
 
 uint8_t NB_AT[] = "AT\r\n";
 uint8_t NB_OK[] = "OK\r\n";
@@ -18,6 +18,7 @@ uint8_t NB_ATCSQ[] = "AT+CSQ\r\n";
 uint8_t NB_ATCFUN[] = "AT+CFUN=%s\r\n";;
 uint8_t NB_ATCONFIG[] = "AT+NCONFIG=%s,%s\r\n";
 uint8_t NB_ATNCDP[] = "AT+NCDP=%s\r\n";
+uint8_t NB_REBOOT[] = "AT+NRB\r\n";
 uint8_t NB_ATNBAND[] = "AT+NBAND=%s\r\n";
 uint8_t NB_ATCPSMS[] = "AT+CPSMS=%s\r\n";
 uint8_t NB_ATCEDRXS[] = "AT+CEDRXS=%s,%s\r\n";
@@ -34,13 +35,15 @@ uint8_t __NB_SIGNAL_QUALITY();
 
 uint8_t __NB_Manual();
 
-uint8_t __NB_SetCDP();
+uint8_t __NB_SetNCDP();
 
 uint8_t __NB_ModReboot();
 
 uint8_t __NB_SetBand();
 
 uint8_t __NB_OpenCFun();
+
+uint8_t __NB_CloseCFun();
 
 uint8_t __NB_EdrxOff();
 
@@ -52,7 +55,7 @@ uint8_t (*InitProc[])() ={
         __NB_MODULE_STATUS,
         __NB_SIGNAL_QUALITY,
         __NB_Manual,
-        __NB_SetCDP,
+        __NB_SetNCDP,
         __NB_ModReboot,
         __NB_SetBand,
         __NB_SetBand,
@@ -62,10 +65,25 @@ uint8_t (*InitProc[])() ={
         __NB_NETATT,
 };
 
+uint8_t (*CloseProc[])()={
+        __NB_CloseCFun,
+};
+
 uint8_t NBInit() {
     unsigned int it = 0;
     for (it = 0; it < sizeof InitProc; it++) {
         if (!InitProc[it]()) {
+            NBERROR(it);
+            it--;
+        }
+    }
+    return 1;
+}
+
+uint8_t NBClose(){
+    unsigned int it = 0;
+    for (it = 0; it < sizeof InitProc; it++) {
+        if (!CloseProc[it]()) {
             NBERROR(it);
             it--;
         }
@@ -188,20 +206,29 @@ uint8_t __NB_Manual() {
     return 1;
 }
 
-uint8_t __NB_SetCDP() {
+uint8_t __NB_SetNCDP() {
     char resBuff[UART_BUFFER_SIZE];
+    char com[30];
+    memset(com, 0, sizeof com);
+    sprintf(com, NB_ATNCDP, coapIpPort, __NB_FALSE);
     uint8_t res_size;
-    NBCommand(NB_ATCSQ, sizeof NB_ATCSQ, resBuff, &res_size);
+    NBCommand(com, strlen(com), resBuff, &res_size);
 
-    return 0;
+    char *strx = NULL;
+    strx = strstr((const char *) resBuff, (const char *) "OK");
+
+    if (strx == NULL) {
+        return 0;
+    }
+    return 1;
 }
 
 uint8_t __NB_ModReboot() {
     char resBuff[UART_BUFFER_SIZE];
     uint8_t res_size;
-    NBCommand(NB_ATCSQ, sizeof NB_ATCSQ, resBuff, &res_size);
+    NBCommand(NB_REBOOT, sizeof NB_REBOOT, resBuff, &res_size);
 
-    return 0;
+    return 1;
 }
 
 uint8_t __NB_SetBand() {
@@ -216,7 +243,24 @@ uint8_t __NB_OpenCFun() {
     char resBuff[UART_BUFFER_SIZE];
     char com[30];
     memset(com, 0, sizeof com);
-    sprintf(com, NB_ATNCDP, coapIpPort, __NB_FALSE);
+    sprintf(com, NB_ATCFUN, "1");
+    uint8_t res_size;
+    NBCommand(com, strlen(com), resBuff, &res_size);
+
+    char *strx = NULL;
+    strx = strstr((const char *) resBuff, (const char *) "OK");
+
+    if (strx == NULL) {
+        return 0;
+    }
+    return 1;
+}
+
+uint8_t __NB_CloseCFun() {
+    char resBuff[UART_BUFFER_SIZE];
+    char com[30];
+    memset(com, 0, sizeof com);
+    sprintf(com, NB_ATCFUN, "0");
     uint8_t res_size;
     NBCommand(com, strlen(com), resBuff, &res_size);
 
