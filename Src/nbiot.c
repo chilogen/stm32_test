@@ -13,7 +13,7 @@ extern uint8_t UART2RXBUFFER[UART_BUFFER_SIZE];
 const char coapIpPort[]="127.0.0.1:6666";
 
 uint8_t NB_AT[] = "AT\r\n";
-uint8_t NB_OK[] = "OK\r\n";
+const char NB_OK[] = "OK";
 uint8_t NB_ATCSQ[] = "AT+CSQ\r\n";
 uint8_t NB_ATCFUN[] = "AT+CFUN=%s\r\n";;
 uint8_t NB_ATCONFIG[] = "AT+NCONFIG=%s,%s\r\n";
@@ -24,6 +24,7 @@ uint8_t NB_ATCPSMS[] = "AT+CPSMS=%s\r\n";
 uint8_t NB_ATCEDRXS[] = "AT+CEDRXS=%s,%s\r\n";
 uint8_t NB_CGATT[] = "AT+CGATT=%s\r\n";
 uint8_t NB_CGATTq[] = "AT+CGATT?\r\n";
+uint8_t NB_NETCLOSE[]="AT+QLWULDATAEX=3,AA34BB,0x0001";
 
 const char __NB_FALSE[]="FALSE";
 const char __NB_OK[]="OK";
@@ -51,6 +52,8 @@ uint8_t __NB_PSMOff();
 
 uint8_t __NB_NETATT();
 
+uint8_t __NB_NETCLOSE();
+
 uint8_t (*InitProc[])() ={
         __NB_MODULE_STATUS,
         __NB_SIGNAL_QUALITY,
@@ -66,6 +69,7 @@ uint8_t (*InitProc[])() ={
 };
 
 uint8_t (*CloseProc[])()={
+        __NB_NETCLOSE,
         __NB_CloseCFun,
 };
 
@@ -193,12 +197,12 @@ uint8_t __NB_Manual() {
     char resBuff[UART_BUFFER_SIZE];
     char com[30];
     memset(com, 0, sizeof com);
-    sprintf(com, NB_ATCONFIG, __NB_AUTOCONNECT, __NB_FALSE);
+    sprintf(com, (const char *)NB_ATCONFIG, __NB_AUTOCONNECT, __NB_FALSE);
     uint8_t res_size;
-    NBCommand(com, strlen(com), resBuff, &res_size);
+    NBCommand((uint8_t*)com, strlen(com), resBuff, &res_size);
 
     char *strx = NULL;
-    strx = strstr((const char *) resBuff, (const char *) "OK");
+    strx = strstr((const char *) resBuff, NB_OK);
 
     if (strx == NULL) {
         return 0;
@@ -210,12 +214,12 @@ uint8_t __NB_SetNCDP() {
     char resBuff[UART_BUFFER_SIZE];
     char com[30];
     memset(com, 0, sizeof com);
-    sprintf(com, NB_ATNCDP, coapIpPort, __NB_FALSE);
+    sprintf(com, (const char *)NB_ATNCDP, coapIpPort, __NB_FALSE);
     uint8_t res_size;
-    NBCommand(com, strlen(com), resBuff, &res_size);
+    NBCommand((uint8_t*)com, strlen(com), resBuff, &res_size);
 
     char *strx = NULL;
-    strx = strstr((const char *) resBuff, (const char *) "OK");
+    strx = strstr((const char *) resBuff, NB_OK);
 
     if (strx == NULL) {
         return 0;
@@ -228,14 +232,29 @@ uint8_t __NB_ModReboot() {
     uint8_t res_size;
     NBCommand(NB_REBOOT, sizeof NB_REBOOT, resBuff, &res_size);
 
+    char *strx=NULL;
+    strx = strstr((const char *) resBuff, NB_OK);
+
+    if (strx == NULL) {
+        return 0;
+    }
     return 1;
 }
 
 uint8_t __NB_SetBand() {
     char resBuff[UART_BUFFER_SIZE];
+    char com[30];
+    memset(com, 0, sizeof com);
+    sprintf(com, (const char *)NB_ATNBAND, 8);
     uint8_t res_size;
     NBCommand(NB_ATCSQ, sizeof NB_ATCSQ, resBuff, &res_size);
 
+    char *strx=NULL;
+    strx = strstr((const char *) resBuff, NB_OK);
+
+    if (strx == NULL) {
+        return 0;
+    }
     return 0;
 }
 
@@ -243,12 +262,12 @@ uint8_t __NB_OpenCFun() {
     char resBuff[UART_BUFFER_SIZE];
     char com[30];
     memset(com, 0, sizeof com);
-    sprintf(com, NB_ATCFUN, "1");
+    sprintf(com, (const char *)NB_ATCFUN, "1");
     uint8_t res_size;
-    NBCommand(com, strlen(com), resBuff, &res_size);
+    NBCommand((uint8_t *)com, strlen(com), resBuff, &res_size);
 
     char *strx = NULL;
-    strx = strstr((const char *) resBuff, (const char *) "OK");
+    strx = strstr((const char *) resBuff, NB_OK);
 
     if (strx == NULL) {
         return 0;
@@ -260,12 +279,12 @@ uint8_t __NB_CloseCFun() {
     char resBuff[UART_BUFFER_SIZE];
     char com[30];
     memset(com, 0, sizeof com);
-    sprintf(com, NB_ATCFUN, "0");
+    sprintf(com, (const char *)NB_ATCFUN, "0");
     uint8_t res_size;
-    NBCommand(com, strlen(com), resBuff, &res_size);
+    NBCommand((uint8_t *)com, strlen(com), resBuff, &res_size);
 
     char *strx = NULL;
-    strx = strstr((const char *) resBuff, (const char *) "OK");
+    strx = strstr((const char *) resBuff, NB_OK);
 
     if (strx == NULL) {
         return 0;
@@ -275,18 +294,36 @@ uint8_t __NB_CloseCFun() {
 
 uint8_t __NB_EdrxOff() {
     char resBuff[UART_BUFFER_SIZE];
+    char com[30];
+    memset(com, 0, sizeof com);
+    sprintf(com, (const char *) NB_ATCEDRXS, "0", "5");
     uint8_t res_size;
-    NBCommand(NB_ATCSQ, sizeof NB_ATCSQ, resBuff, &res_size);
+    NBCommand((uint8_t *) com, strlen(com), resBuff, &res_size);
 
-    return 0;
+    char *strx = NULL;
+    strx = strstr((const char *) resBuff, NB_OK);
+
+    if (strx == NULL) {
+        return 0;
+    }
+    return 1;
 }
 
 uint8_t __NB_PSMOff() {
     char resBuff[UART_BUFFER_SIZE];
+    char com[30];
+    memset(com, 0, sizeof com);
+    sprintf(com, (const char *)NB_ATCPSMS, "0");
     uint8_t res_size;
-    NBCommand(NB_ATCSQ, sizeof NB_ATCSQ, resBuff, &res_size);
+    NBCommand((uint8_t *)com, strlen(com), resBuff, &res_size);
 
-    return 0;
+    char *strx = NULL;
+    strx = strstr((const char *) resBuff, NB_OK);
+
+    if (strx == NULL) {
+        return 0;
+    }
+    return 1;
 }
 
 uint8_t __NB_NETATT() {
@@ -294,5 +331,20 @@ uint8_t __NB_NETATT() {
     uint8_t res_size;
     NBCommand(NB_ATCSQ, sizeof NB_ATCSQ, resBuff, &res_size);
 
+    return 0;
+}
+
+uint8_t __NB_NETCLOSE(){
+    char resBuff[UART_BUFFER_SIZE];
+    uint8_t res_size;
+    NBCommand(NB_NETCLOSE, sizeof NB_ATCSQ, resBuff, &res_size);
+
+    char *strx = NULL;
+    strx = strstr((const char *) resBuff, NB_OK);
+
+    if (strx == NULL) {
+        return 0;
+    }
+    return 1;
     return 0;
 }

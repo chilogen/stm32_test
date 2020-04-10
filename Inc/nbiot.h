@@ -8,6 +8,7 @@
 
 
 uint8_t NBInit();
+uint8_t NBClose();
 void NBCommand(uint8_t *com,uint8_t com_size, char res[UART_BUFFER_SIZE],uint8_t *res_size);
 void NBGetMsg(char *,uint8_t);
 void NBSendMsg(char *,uint8_t);

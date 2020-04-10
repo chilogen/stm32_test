@@ -50,6 +50,8 @@ DMA_HandleTypeDef hdma_usart2_rx;
 /* USER CODE BEGIN PV */
 
 uint8_t resouce_state[3] = {0};
+uint8_t moduleInit = 0, moduleReconnect = 0, moduleClose = 0;
+extern uint8_t UART2RXBUFFER[255];
 
 /* USER CODE END PV */
 
@@ -73,7 +75,6 @@ static void MX_NVIC_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-extern uint8_t UART2RXBUFFER[255];
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     SetLed0(resouce_state[0]);
@@ -81,6 +82,26 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     SetBeep(resouce_state[1]);
 
 }
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+    switch (GPIO_Pin) {
+        case GPIO_PIN_2: {
+            moduleInit = 1;
+            break;
+        }
+        case GPIO_PIN_3: {
+            moduleReconnect = 1;
+            break;
+        }
+        case GPIO_PIN_4: {
+            moduleClose = 1;
+            break;
+        }
+        default: {
+        }
+    }
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -111,9 +132,9 @@ int main(void) {
 
     /* Initialize all configured peripherals */
     MX_GPIO_Init();
+    MX_DMA_Init();
     MX_USART1_UART_Init();
     MX_USART2_UART_Init();
-    MX_DMA_Init();
     MX_TIM3_Init();
 
     /* Initialize interrupts */
@@ -135,6 +156,14 @@ int main(void) {
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1) {
+        if (moduleInit) {
+            NBInit();
+            moduleInit = 0;
+        }
+        if (moduleClose) {
+            NBClose();
+            moduleClose = 0;
+        }
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
@@ -320,6 +349,12 @@ static void MX_GPIO_Init(void) {
     /*Configure GPIO pin Output Level */
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5 | GPIO_PIN_8, GPIO_PIN_RESET);
 
+    /*Configure GPIO pins : PE2 PE3 PE4 */
+    GPIO_InitStruct.Pin = GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4;
+    GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+
     /*Configure GPIO pin : PE5 */
     GPIO_InitStruct.Pin = GPIO_PIN_5;
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -333,6 +368,16 @@ static void MX_GPIO_Init(void) {
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+    /* EXTI interrupt init*/
+    HAL_NVIC_SetPriority(EXTI2_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(EXTI2_IRQn);
+
+    HAL_NVIC_SetPriority(EXTI3_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(EXTI3_IRQn);
+
+    HAL_NVIC_SetPriority(EXTI4_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(EXTI4_IRQn);
 
 }
 
