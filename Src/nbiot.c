@@ -110,16 +110,16 @@ void NBCommand(uint8_t *com, uint8_t com_size, char *res, uint8_t *res_size) {
 
 void NBERROR(uint8_t errno) {
     return;
-    BeepOn();
+    SetBeep(1);
     HAL_Delay(500);
-    BeepOff();
+    SetBeep(0);
 
     HAL_Delay(500);
     uint8_t it;
     for (it = 0; it < errno; it++) {
-        BeepOn();
+        SetBeep(1);
         HAL_Delay(100);
-        BeepOff();
+        SetBeep(0);
     }
 
     HAL_Delay(1000);

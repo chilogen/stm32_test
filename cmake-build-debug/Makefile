@@ -528,6 +528,33 @@ Src/beep.c.s:
 	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/beep.c.s
 .PHONY : Src/beep.c.s
 
+Src/hwoc.obj: Src/hwoc.c.obj
+
+.PHONY : Src/hwoc.obj
+
+# target to build an object file
+Src/hwoc.c.obj:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/hwoc.c.obj
+.PHONY : Src/hwoc.c.obj
+
+Src/hwoc.i: Src/hwoc.c.i
+
+.PHONY : Src/hwoc.i
+
+# target to preprocess a source file
+Src/hwoc.c.i:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/hwoc.c.i
+.PHONY : Src/hwoc.c.i
+
+Src/hwoc.s: Src/hwoc.c.s
+
+.PHONY : Src/hwoc.s
+
+# target to generate assembly for a file
+Src/hwoc.c.s:
+	$(MAKE) -f CMakeFiles/stm32_test.elf.dir/build.make CMakeFiles/stm32_test.elf.dir/Src/hwoc.c.s
+.PHONY : Src/hwoc.c.s
+
 Src/led.obj: Src/led.c.obj
 
 .PHONY : Src/led.obj
@@ -807,6 +834,9 @@ help:
 	@echo "... Src/beep.obj"
 	@echo "... Src/beep.i"
 	@echo "... Src/beep.s"
+	@echo "... Src/hwoc.obj"
+	@echo "... Src/hwoc.i"
+	@echo "... Src/hwoc.s"
 	@echo "... Src/led.obj"
 	@echo "... Src/led.i"
 	@echo "... Src/led.s"

@@ -26,10 +26,10 @@ struct HWOCQueryMSG {
     uint8_t msgID;
 };
 
-struct HWOCMSG {
+typedef struct  {
     uint8_t msgId;
     uint8_t *data;
-};
+}HWOCMSG;
 
 void msgEncode(HWOCMSG *src, char **dst);
 

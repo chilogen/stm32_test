@@ -6,7 +6,6 @@
 #define STM32_TEST_BEEP_H
 
 
-void BeepOn();
-void BeepOff();
+void SetBeep(uint8_t state);
 
 #endif //STM32_TEST_BEEP_H

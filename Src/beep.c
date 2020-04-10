@@ -4,10 +4,16 @@
 
 #include "main.h"
 
-void BeepOn(){
-    HAL_GPIO_WritePin(BEEP,GPIO_PIN_SET);
-}
-
-void BeepOff(){
-    HAL_GPIO_WritePin(BEEP,GPIO_PIN_RESET);
+void SetBeep(uint8_t state){
+    switch (state){
+        case 0:{
+            HAL_GPIO_WritePin(BEEP,GPIO_PIN_RESET);
+            break;
+        }
+        case 1:{
+            HAL_GPIO_WritePin(BEEP,GPIO_PIN_SET);
+            break;
+        }
+        default:{}
+    }
 }

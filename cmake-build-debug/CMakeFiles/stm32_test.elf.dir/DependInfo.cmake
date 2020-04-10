@@ -41,6 +41,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Src/beep.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Src/beep.c.obj"
+  "/home/a/repos/github.com/chilogen/stm32_test/Src/hwoc.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Src/hwoc.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Src/led.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Src/led.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Src/main.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Src/main.c.obj"
   "/home/a/repos/github.com/chilogen/stm32_test/Src/nbiot.c" "/home/a/repos/github.com/chilogen/stm32_test/cmake-build-debug/CMakeFiles/stm32_test.elf.dir/Src/nbiot.c.obj"

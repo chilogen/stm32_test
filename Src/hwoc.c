@@ -4,7 +4,7 @@
 
 #include "main.h"
 
-void msgEncode(struct HWOCMSG *src, char **dst){
+void msgEncode(HWOCMSG *src, char **dst){
     uint8_t it,len;
     switch(src->msgId){
         case 0:{
