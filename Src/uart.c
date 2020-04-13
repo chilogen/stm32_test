@@ -11,6 +11,7 @@ extern DMA_HandleTypeDef hdma_usart2_rx;
 
 uint8_t UART2DATAREADY = 0;
 uint8_t UART2RXBUFFER[UART_BUFFER_SIZE];
+uint8_t UARTLOCK = 0;
 
 void USER_UART_IRQHandler(UART_HandleTypeDef *huart) {
     if (huart == &huart2) {
